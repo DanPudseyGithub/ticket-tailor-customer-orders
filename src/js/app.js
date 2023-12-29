@@ -1,6 +1,10 @@
+// CSS
 import '../scss/app.scss';
 
-/* Your JS Code goes here */
+// JS
+import { searchForm } from './component/search/card-elements.js';
+import { updateCardSearch } from './component/search/update-card-search.js';
 
-/* Demo JS */
-import './demo.js';
+document.addEventListener('DOMContentLoaded', () => {
+  if (searchForm) updateCardSearch();
+});

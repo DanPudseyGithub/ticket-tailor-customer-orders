@@ -1,0 +1,63 @@
+.EventList {
+  display: flex;
+  @include toRem(gap, 10);
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  @include toRem(margin-bottom, 30);
+
+  @include media('>tablet') {
+    @include toRem(gap, 30);
+  }
+
+  &__Event {
+    width: 100%;
+
+    @include media('>tablet') {
+      width: auto;
+    }
+  }
+}
+
+.EventCard {
+  @include toRem(padding-top, 14);
+  @include toRem(padding-right, 18);
+  @include toRem(padding-bottom, 14);
+  @include toRem(padding-left, 18);
+  min-width: 100%;
+  background-color: $card-background;
+  border: 1px solid $card-border;
+  transition: border-color $card-animation, background-color $card-animation;
+  border-radius: $border-radius-primary;
+  box-shadow: 0px 2px 3px 0px $card-shadow;
+  cursor: pointer;
+
+  @include media('>tablet') {
+    @include toRem(min-width, 220);
+  }
+
+  &--Selected {
+    background-color: $card-background-selected;
+    border-color: $card-border-selected;
+
+    .EventCard__Header,
+    .EventCard__Info {
+      color: $card-background-text-selected;
+    }
+  }
+
+  * {
+    pointer-events: none;
+  }
+
+  &__Header {
+    @include toRem(margin-bottom, 6);
+    transition: color $card-animation;
+  }
+
+  &__Info {
+    display: flex;
+    justify-content: space-between;
+    transition: color $card-animation;
+  }
+}

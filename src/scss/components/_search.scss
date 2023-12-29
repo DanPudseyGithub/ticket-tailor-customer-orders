@@ -1,0 +1,28 @@
+.Search {
+}
+
+.SearchFilter {
+  display: flex;
+  flex-direction: column;
+  @include toRem(row-gap, 10);
+  @include toRem(margin-bottom, 10);
+
+  @include media('>tablet') {
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    row-gap: 0;
+  }
+}
+
+.SearchSort {
+  display: flex;
+  @include toRem(gap, 10);
+  align-items: center;
+
+  &__Title {
+  }
+
+  &__Dropdown {
+  }
+}

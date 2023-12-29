@@ -14,9 +14,7 @@
   }
 }
 
-//Placeholders
-//Usage:
-//@include placeholder;
+// Placeholders
 @mixin placeholder {
   // sass-lint:disable no-vendor-prefixes
   ::-webkit-input-placeholder {
@@ -31,4 +29,26 @@
   :-ms-input-placeholder {
     @content;
   }
+}
+
+// Font smoothing
+@mixin font-smoothing {
+  // sass-lint:disable no-vendor-prefixes
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// Set the base rem unit here
+@mixin toRem($property, $value, $important: false) {
+  @if $important {
+    #{$property}: calc($value / 16) + rem !important;
+  } @else {
+    #{$property}: calc($value / 16) + rem;
+  }
+}
+
+// Set the font-size and get the line-height
+@mixin fontSize($font-size) {
+  @include toRem(font-size, $font-size);
+  @include toRem(line-height, calc($font-size / 0.7));
 }

@@ -1,0 +1,27 @@
+.CTAWrapper {
+  display: flex;
+  @include toRem(gap, 30);
+  flex-wrap: wrap;
+}
+
+.CTA {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100%;
+  @include toRem(padding-top, 14);
+  @include toRem(padding-right, 35);
+  @include toRem(padding-bottom, 14);
+  @include toRem(padding-left, 35);
+  @include toRem(gap, 10);
+  background-color: $cta-primary;
+  border-radius: $border-radius-max;
+  color: $cta-primary-text;
+  @include fontSize(16);
+  border: none;
+  cursor: pointer;
+
+  @include media('>largeMobile') {
+    @include toRem(min-width, 220);
+  }
+}
