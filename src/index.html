@@ -3,17 +3,98 @@
   <head>
     <meta charset="UTF-8" />
     <title>Your customer orders</title>
-    <meta name="description" content="Design and build an event selection drop down for Order search" />
+    <meta name="description" content="Design and build an event selection drop down for your customer order search" />
     <meta
       name="keywords"
-      content="webpack, webpack-configuration, template, boilerplate, setup, html, css, sass, javascript"
+      content="sell tickets online, free event ticketing, event ticketing, alternative to eventbrite, selling tickets online, sell tickets no fees, sell tickets for free, event registration"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="author" content="Dan Pudsey, danpudsey.com" />
   </head>
   <body>
-    <header>
-      <h1>Your customer orders</h1>
-    </header>
+    <main class="Main">
+      <div class="Grid__Row">
+        <div class="Grid__Column">
+          <div class="HeaderLogo">
+            <img src="images/content/logo.svg" width="180" height="auto" alt="Ticket Tailor Logo" />
+          </div>
+          <header class="PageHeader">
+            <h1>Your customer orders</h1>
+            <h2 class="Subheading">Select single or multiple events to sort your customer orders</h2>
+          </header>
+          <section class="Search" data-js-search>
+            <div class="Grid__Row">
+              <div class="Grid__Column LG7">
+                <div class="SearchFilter">
+                  <p>
+                    Filtering <span data-js-total-filtered-events>0</span> of <span data-js-total-events>∞</span> events
+                  </p>
+                  <div class="SearchSort">
+                    <p class="SearchSort__Title">Sort by date</p>
+                    <select class="SearchSort__Dropdown" data-js-search-sort>
+                      <option>Soonest first</option>
+                      <option>Farthest first</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="Grid__Row">
+              <div class="Grid__Column LG9">
+                <ul class="EventList">
+                  <li class="EventList__Event">
+                    <article id="EFY32F" class="EventCard" data-js-event-card data-js-selected="false">
+                      <header class="EventCard__Header">
+                        <h2>Summer party</h2>
+                      </header>
+                      <div class="EventCard__Info">
+                        <time datetime="19:00">3pm</time>
+                        <time datetime="2023-07-07">7 Jul 2023</time>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="EventList__Event">
+                    <article id="WHB99P" class="EventCard" data-js-event-card data-js-selected="false">
+                      <header class="EventCard__Header">
+                        <h2>Half marathon</h2>
+                      </header>
+                      <div class="EventCard__Info">
+                        <time datetime="19:00">1pm</time>
+                        <time datetime="2023-07-07">15 Sep 2023</time>
+                      </div>
+                    </article>
+                  </li>
+                  <li class="EventList__Event">
+                    <article id="JKX12N" class="EventCard" data-js-event-card data-js-selected="false">
+                      <header class="EventCard__Header">
+                        <h2>Christmas party</h2>
+                      </header>
+                      <div class="EventCard__Info">
+                        <time datetime="19:00">7pm</time>
+                        <time datetime="2023-07-07">18 Dec 2023</time>
+                      </div>
+                    </article>
+                  </li>
+                </ul>
+                <form id="eventForm" method="post">
+                  <input
+                    id="eventFormList"
+                    name="eventFormList"
+                    value=""
+                    type="hidden"
+                    required
+                    pattern="[a-zA-Z0-9]+"
+                    data-js-event-list-input
+                  />
+                  <div class="CTAWrapper">
+                    <input type="submit" value="Submit" class="CTA" data-js-search-submit />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

@@ -1,19 +1,28 @@
-/* Variables */
+// Variables
 @import 'variables/variables';
 
-/* Mixins, helpers and functions */
+// Mixins, helpers and functions
 @import 'variables/mixins';
 
-/* Reset */
+// Reset
 @import 'base/reset';
 
-/* Print */
+// Print
 @import 'base/print';
 
-/* Fonts */
+// Typography
 @import 'base/fonts';
+@import 'base/typography';
 
-/* Components */
+// Layout
+@import 'base/grid';
 
-/* Index page styles */
+// Components
+@import 'components/header';
+@import 'components/search';
+@import 'components/form';
+@import 'components/event-card';
+@import 'components/cta';
+
+// Index page styles
 @import 'index';

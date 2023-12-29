@@ -2,23 +2,15 @@ html {
   font-size: 16px;
   font-family: $font-sans;
   background-color: $document-background;
+  @include font-smoothing;
 }
 
-body {
+.Main {
+  @include toRem(margin-top, 20);
+  @include toRem(padding-left, 10);
+  @include toRem(padding-right, 10);
 }
 
-main {
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $font-serif;
-}
-
-p {
-  font-family: $font-sans;
+.PageHeader {
+  @include toRem(margin-bottom, 30);
 }

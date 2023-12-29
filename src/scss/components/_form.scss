@@ -1,0 +1,26 @@
+select {
+  appearance: none;
+  box-shadow: none;
+  outline: none;
+  @include toRem(padding-top, 8);
+  @include toRem(padding-right, 46);
+  @include toRem(padding-bottom, 8);
+  @include toRem(padding-left, 12);
+  @include toRem(font-size, 16);
+  border: 1px solid $input-border;
+  border-radius: $border-radius-primary;
+  background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.005 15.9437C11.785 15.9437 11.5849 15.8637 11.4249 15.7037L6.42495 10.5037C6.12495 10.1837 6.12494 9.68371 6.44494 9.36371C6.76494 9.06371 7.26496 9.06371 7.58496 9.38371L12.005 13.9837L16.425 9.38371C16.725 9.06371 17.245 9.06371 17.565 9.36371C17.885 9.66371 17.8849 10.1837 17.5849 10.5037L12.585 15.7037C12.425 15.8637 12.225 15.9437 12.005 15.9437Z' fill='black'/%3E%3C/svg%3E%0A");
+  background-position: calc(100% - 6px) 50%;
+  background-repeat: no-repeat;
+  background-size: 24px 24px;
+  transition: border-color $border-animation;
+
+  &::-ms-expand {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $input-border-focus;
+  }
+}

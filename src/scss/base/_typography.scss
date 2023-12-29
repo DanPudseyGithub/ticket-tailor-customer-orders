@@ -1,0 +1,51 @@
+// Elements
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-serif;
+  font-weight: 400;
+}
+
+h1 {
+  @include fontSize(26);
+
+  @include media('>tablet') {
+    @include fontSize(36);
+  }
+}
+
+h2 {
+  @include fontSize(18);
+
+  @include media('>tablet') {
+    @include fontSize(24);
+  }
+}
+
+h3 {
+  @include fontSize(20);
+}
+
+p {
+  @include fontSize(16);
+  font-family: $font-sans;
+}
+
+select,
+ul,
+ol,
+li,
+input,
+label,
+time {
+  font-family: $font-sans;
+}
+
+// Components
+.Subheading {
+  @include fontSize(16);
+  font-family: $font-sans;
+}

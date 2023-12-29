@@ -1,0 +1,262 @@
+.Grid {
+  &__Row {
+    display: flex;
+    flex-flow: row wrap;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    @include toRem(max-width, $desktop-component-width);
+  }
+
+  &__Column {
+    max-width: 100%;
+    flex: 1 1 0px;
+    box-sizing: border-box;
+  }
+}
+
+.SM1 {
+  flex: 0 0 8.33333%;
+  max-width: 8.33333%;
+}
+
+.SM2 {
+  flex: 0 0 16.66667%;
+  max-width: 16.66667%;
+}
+
+.SM3 {
+  flex: 0 0 25%;
+  max-width: 25%;
+}
+
+.SM4 {
+  flex: 0 0 33.33333%;
+  max-width: 33.33333%;
+}
+
+.SM5 {
+  flex: 0 0 41.66667%;
+  max-width: 41.66667%;
+}
+
+.SM6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+.SM7 {
+  flex: 0 0 58.33333%;
+  max-width: 58.33333%;
+}
+
+.SM8 {
+  flex: 0 0 66.66667%;
+  max-width: 66.66667%;
+}
+
+.SM9 {
+  flex: 0 0 75%;
+  max-width: 75%;
+}
+
+.SM10 {
+  flex: 0 0 83.33333%;
+  max-width: 83.33333%;
+}
+
+.SM11 {
+  flex: 0 0 91.66667%;
+  max-width: 91.66667%;
+}
+
+.SM12 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@include media('>tablet') {
+  .MD1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+
+  .MD2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .MD3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .MD4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .MD5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+
+  .MD6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .MD7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
+  .MD8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+  .MD9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .MD10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+
+  .MD11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
+  .MD12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@include media('>desktop') {
+  .LG1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+
+  .LG2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .LG3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .LG4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .LG5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+
+  .LG6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .LG7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
+  .LG8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+  .LG9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .LG10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+
+  .LG11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
+  .LG12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@include media('>desktop-wide') {
+  .XL1 {
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+  }
+
+  .XL2 {
+    flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .XL3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .XL4 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .XL5 {
+    flex: 0 0 41.66667%;
+    max-width: 41.66667%;
+  }
+
+  .XL6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .XL7 {
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+  }
+
+  .XL8 {
+    flex: 0 0 66.66667%;
+    max-width: 66.66667%;
+  }
+
+  .XL9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .XL10 {
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+  }
+
+  .XL11 {
+    flex: 0 0 91.66667%;
+    max-width: 91.66667%;
+  }
+
+  .XL12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}

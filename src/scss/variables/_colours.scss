@@ -17,7 +17,14 @@ $body-copy: $brand-body-black;
 
 // Components
 $cta-primary: $brand-dark-purple;
+$cta-primary-text: $white;
 $table-heading: $brand-dark-purple;
 $table-body: $brand-body-black;
+$input-border: change-color($brand-dark-purple, $alpha: 0.2);
+$input-border-focus: $brand-dark-purple;
+$card-background: $white;
+$card-background-selected: $brand-dark-purple;
+$card-background-text-selected: $white;
 $card-border: change-color($brand-dark-purple, $alpha: 0.2);
+$card-border-selected: change-color($brand-black, $alpha: 0.2);
 $card-shadow: change-color($brand-grey-2, $alpha: 0.15);
